@@ -7,6 +7,7 @@ h1 {
     height: 0;
     transition: color 0.5s, padding 0.5s;
     overflow: hidden;
+
 }
 
 .acordion-wrapper .acordion-body img {
@@ -23,31 +24,40 @@ h1 {
     font-weight: bold;
     font-size: 18px;
     margin: 5px;
-}
-
-.aacordion-wrapper label:hover {
-    color: #FFF;
+  
 }
 
 .acordion-wrapper input {
     display: none;
+    
+
 }
 
 .acordion-wrapper label:before {
     content: '\276F';
     float: right;
+  
 }
 
 .acordion-wrapper input:checked+label:before {
     transition: transform .35s;
     transform: rotate(90deg);
+    display: block;
+    position: relative;
 }
+
 
 .acordion-wrapper input:checked+label+.acordion-body {
     height: auto;
+    display: block;
+    position: relative;
     margin-top: -5px;
 }
 
 img {
     width: 350px;
 }
+label{
+    display: none;
+}
+
